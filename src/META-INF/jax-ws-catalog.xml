@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:9080/ws-textbook-ex01-hello/sayhello?sdl" uri="xml-resources/web-service-references/sayhello_sdl/wsdl/localhost_9080/ws-textbook-ex01-hello/sayhello.sdl.xml"/>
+    <system systemId="http://localhost:9080/ws-textbook-ex01-hello/sayhello?wsdl" uri="wsdl/localhost_9080/ws-textbook-ex01-hello/sayhello.wsdl"/>
+    <system systemId="http://localhost:9080/ws-textbook-ex01-hello/sayhello?xsd=1" uri="wsdl/localhost_9080/ws-textbook-ex01-hello/sayhello.xsd_1.xsd"/>
+</catalog>

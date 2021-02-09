@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.3.0 svn-revision#3528ea595bd29309f69172d231bbce272d21035c. --><xs:schema xmlns:tns="http://ws.eltonb.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.eltonb.com/">
+
+<xs:element name="echo" type="tns:echo"></xs:element>
+
+<xs:element name="echoResponse" type="tns:echoResponse"></xs:element>
+
+<xs:element name="greet" type="tns:greet"></xs:element>
+
+<xs:element name="greetResponse" type="tns:greetResponse"></xs:element>
+
+<xs:complexType name="echo">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="echoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="greet">
+<xs:sequence>
+<xs:element name="request" type="tns:helloRequest" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloRequest">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="surname" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="greetResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:helloResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="date" type="xs:dateTime" minOccurs="0"></xs:element>
+<xs:element name="greeting" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
